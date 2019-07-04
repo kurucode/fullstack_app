@@ -78,7 +78,7 @@ class App extends Component {
       update: {message: updateToApply},
     });
   };
-// eslint-disable-next-line
+
   render() {
     const {data} = this.state;
     console.log(data);
@@ -87,10 +87,10 @@ class App extends Component {
         <ul>
           {
             data.map((dat) => {
-             return  <li style={{padding: '10px'}} key={dat._id}>
-                <span style={{color: 'gray'}}> id:</span> {dat.id} <br />
-                <span style={{color: 'gray'}}> data:</span>{dat.message}
-              </li>
+             return <li style={{padding: '10px'}} key={dat._id}>
+                      <span style={{color: 'gray'}}> id:</span> {dat.id} <br />
+                      <span style={{color: 'gray'}}> data:</span>{dat.message}
+                    </li>
             })
           }
         </ul>
